@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/userLabel"
+        android:text="User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="50dp"
+
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/userId"
+        android:text="User 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:id="@+id/countLabel"
+        app:layout_constraintTop_toBottomOf="@id/userId"
+        android:text="Incomplete Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/inCount"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="100"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/countLabel"
+        app:layout_constraintTop_toBottomOf="@id/userId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</android.support.constraint.ConstraintLayout>
